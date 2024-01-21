@@ -11,15 +11,15 @@ $(document).ready(function() {
         e.preventDefault()
         const enderecoDaNovaImagem = $('#endereco-img-nova').val()
         const novoItem = $('<li style="display: none"></li>')
-        $(`<img src="${enderecoDaNovaImagem}" />`).apendTo(novoItem)
+        $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem)
         $(`
         <div class="overlay-img-link">
                 <a href="${enderecoDaNovaImagem}" target="_blank" title="ver imagem em tamanho real">
                     ver imagem em tamanho real
                 </a>
         </div>
-        `).apendTo(novoItem)
-        $(novoItem).apendTo('ul')
+        `).appendTo(novoItem)
+        $(novoItem).appendTo('ul')
         $(novoItem).fadeIn(1000)
         $('#endereco-img-nova').val('')
     })
